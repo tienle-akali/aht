@@ -1,0 +1,10 @@
+﻿CẤU TRÚC CODE NHƯ SAU
+1. Header, Footer, CSS và JS thuộc thư mục templates/default
+2. Model, Controller và View thì nằm trong /application/modules/frontend
+3. Chèn thêm hay bỏ bớt CSS, JS thì trong Post_Model
+
+YÊU CẦU
+1. Làm form Login: Email, Pass và Captcha
+2. Làm form Register: Email, Captcha (password thì sẽ email confirm sau)
+3. Làm form Contact: Full name, Email, Mobile, Content
+4. Làm form Post như file word (mình bố trí răng cho hợp lý với form nhìn ok thôi, không phải làm giao diện giống như trong file word nghe)

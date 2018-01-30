@@ -1,0 +1,71 @@
+/* 
+AHT css style 
+29/01/2018
+*/
+$border-color: #ddd;
+@mixin cover-img($width, $height) {
+	width: $width;
+	height: $height;
+	background-image: none;
+	background-color: #eee;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+@mixin border($position, $weight:1px, $style:solid, $color:$border-color) {
+    border-#{$position}: $weight $style $color;
+}
+@mixin border-default {
+	border: 1px solid $border-color; 
+}
+.border {
+	@include border-default;
+}
+.border-top {
+	@include border(top);
+}
+.border-bottom {
+	@include border(bottom);
+}
+.border-right {
+	@include border(right);
+}
+.border-left {
+	@include border(left);
+}
+/* @include cover-img(40px, 40px); */
+
+
+/* Search Product view as Grid */
+.search-grid {
+ 	.product-list {
+		.product-item {
+			@include border-default;
+	        box-shadow: 0px 2px 4px #999;
+			.product-thumb {
+				@include cover-img(100%, 220px);
+			}
+			.product-info {
+				.product-title {
+
+				}
+				.product-price {
+
+				}
+			}
+		}	
+			
+	}	
+}
+
+
+/* Search Product view as List */
+
+.search-list {
+	.product-thumb {
+		@include cover-img(80px, 80px);
+	}
+}
+
+    
